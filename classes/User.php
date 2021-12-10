@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . "/../exceptions/StringException.php";
 
 class User {
     protected $id;
@@ -19,19 +20,25 @@ class User {
     // ******************************************************************
     // Funzioni set
     public function setId($newId) {
-        if ($this->invalidNumberValue($newId)) return;
+        if ($this->invalidNumberValue($newId)) {
+            throw new Exception("Id is not a number");
+        }
 
         $this->id = $newId;
     }
 
     public function setFirstName($newFirstName) {
-        if ($this->invalidStringValue($newFirstName)) return;
+        if ($this->invalidStringValue($newFirstName)) {
+            throw new StringException;
+        }
 
         $this->firstName = $newFirstName;
     }
 
     public function setLastName($newLastName) {
-        if ($this->invalidStringValue($newLastName)) return;
+        if ($this->invalidStringValue($newLastName)) {
+            throw new StringException;
+        }
 
         $this->lastName = $newLastName;
     }

@@ -1,19 +1,11 @@
 <?php
 
-// require_once __DIR__ . "/classes/User.php";
-// require_once __DIR__ . "/classes/UserPrime.php";
-// require_once __DIR__ . "/classes/Product.php";
-// require_once __DIR__ . "/classes/ProductAlimentare.php";
-// require_once __DIR__ . "/classes/Paypal.php";
-// require_once __DIR__ . "/classes/CartaCredito.php";
-
-// prima di pushare inserire il punto
-require_once __DIR__ . "./classes/User.php";
-require_once __DIR__ . "./classes/UserPrime.php";
-require_once __DIR__ . "./classes/Product.php";
-require_once __DIR__ . "./classes/ProductAlimentare.php";
-require_once __DIR__ . "./classes/Paypal.php";
-require_once __DIR__ . "./classes/CartaCredito.php";
+require_once __DIR__ . "/classes/User.php";
+require_once __DIR__ . "/classes/UserPrime.php";
+require_once __DIR__ . "/classes/Product.php";
+require_once __DIR__ . "/classes/ProductAlimentare.php";
+require_once __DIR__ . "/classes/Paypal.php";
+require_once __DIR__ . "/classes/CartaCredito.php";
 
 
 // creo due istanze di utenti

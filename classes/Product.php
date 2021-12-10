@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . "/../exceptions/StringException.php";
 
 class Product {
     protected $id;
@@ -23,7 +24,9 @@ class Product {
     }
 
     public function setName($newName) {
-        if ($this->invalidStringValue($newName)) return;
+        if ($this->invalidStringValue($newName)) {
+            throw new StringException;
+        }
 
         $this->name = $newName;
     }
